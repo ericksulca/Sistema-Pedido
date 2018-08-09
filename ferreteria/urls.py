@@ -63,7 +63,7 @@ urlpatterns = [
     url(r'^Presentacion/registrar/$', registrarPresentacionProducto),
     url(r'^Presentacion/eliminar/(?P<presentacion_id>\d+)/(?P<producto_id>\d+)/$', eliminarPresentacionProducto),
     url(r'^Presentacion/getPresentaciones/$', getPresentaciones),
-    
+
     url(r'^Precios/getPrecios/$', getPrecios),
     #url(r'^pruebaExcel/$', IngresarPrecios),
     ################## Cliente #######################
@@ -73,9 +73,8 @@ urlpatterns = [
     url(r'^Cliente/listar/$', listarCliente),
     url(r'^Cliente/buscar/$', IngresarPrecios),
     url(r'^Cliente/actualizar/$', IngresarPrecios),
-    
-    ################## Pedidos #######################
 
+    ################## Pedidos #######################
     url(r'^Pedido/nuevo/$', IngresarPrecios),
     url(r'^Pedido/listar/$', ListarPedidos),
     url(r'^Pedido/resumen/$', ResumenPedidos),
@@ -84,9 +83,9 @@ urlpatterns = [
     url(r'^Pedido/reporte/$', IngresarPrecios),
     url(r'^Pedido/buscar/$', IngresarPrecios),
     url(r'^Pedido/imprimir/$', IngresarPrecios),
-    
+
     ################## APP Movil #######################
-    
+
     url(r'^usuario/validar/$', validarUsuario),
     url(r'^usuario/ruta/$', rutaUsuario),
 
@@ -106,7 +105,7 @@ urlpatterns = [
     url(r'^producto/buscar/$', BuscarProducto),
     url(r'^producto/presentacion/listar/$', ListarPresentacionesProducto),
     url(r'^producto/presentacion/cantidad/$', CantidadPresentacionesProducto),
-    
+
     url(r'^error/registrar/$', registrarError),
 
     #####################################################
